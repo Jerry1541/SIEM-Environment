@@ -6,9 +6,9 @@ This is a personal project to familiarize and experience developing SIEM using c
 
 ### Skills Learned
 
-- Understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Managed Azure based SIEM with over 5,000 RDP attacks originating from Russia, China, and Europe.
+- Configured Log Analytics Workspace for ingesting custom logs efficiently from a honeypot VM.
+- Set up Azure Sentinel Workbooks to visualize and analyze global RDP attack patterns.
 
 ### Tools Used
 
@@ -21,6 +21,12 @@ Azure portal subscription:
 -	Create workbook (Azure) to display global attack data according to location and magnitude
 
 ## Steps
+
+<p align="center">
+    <img src="https://i.imgur.com/0a4D9fz.png" height="50%" width="50%" alt=""/> <br/>
+    Data flow and system architecture <br/>
+</p>
+
 -	Set up a free subscription account on Azure portal
 -	Set up virtual machine
     - Make it extremely vulnerable by removing firewalls
@@ -34,6 +40,15 @@ Azure portal subscription:
 -	Set up workbook in Microsoft Sentinel to map attacks using details from the Log
     - Connect Sentinel to LAW
     - Add query for visualizing attack data
+ 
+## Workbooks
+
+<p align="center">
+    <img src="https://i.imgur.com/HkGDg7u.png" height="50%" width="50%" alt=""/> <br/>
+    Failed RDP World Map <br/> <br/>
+    <img src="https://i.imgur.com/Ja78gPj.png" height="50%" width="50%" alt=""/> <br/>
+    Usernames used Tiles <br/>
+</p>
  
 ## References
 Josh Madakor. (2021, November 1). SIEM Tutorial for Beginners | Azure Sentinel Tutorial MAP with LIVE CYBER ATTACKS! [Video]. YouTube. https://www.youtube.com/watch?v=RoZeVbbZ0o0&ab_channel=JoshMadakor
